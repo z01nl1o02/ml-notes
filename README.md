@@ -40,7 +40,7 @@
    
 8. 速度改进  
    8.1 ENet   
-   8.2 ICNet    
+   8.2 ICNet  2018
     强调分割速度的两个算法，ICNet速度接近ENet而且效果远远好于ENet.   
     ICNet基础的优化思路是：在低分辨率上使用dense convnet获得粗略的分割结果，在高分辨率上使用light convnet，并结合低分辨率分割结果（CFF模块），优化分割细节   
    
