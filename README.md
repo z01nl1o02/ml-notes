@@ -38,9 +38,9 @@
 6. Large Kernel Matters
    2017,考虑到分类和分割是两个矛盾的问题：分类期望使用较大的kernel，全连接，以获得对位置和姿态的鲁棒性，而分割期望使用较小的kernel，仅仅依赖局部信息以获得较高的定位精度。该方法通过分解二维卷积的策略降低了使用大kernel的计算量；每个stage输出的特征图都经过一个大kernel的卷积，然后经过类似残差结构的Boundary Refinement结构，最后类似UNet逐层上采样获得输出结果。
    
-a. 速度改进  
-   3.1 ENet  
-   3.2 ICNet   
+7. 速度改进  
+   7.1 ENet   
+   7.2 ICNet    
     强调分割速度的两个算法，ICNet速度接近ENet而且效果远远好于ENet.   
     ICNet基础的优化思路是：在低分辨率上使用dense convnet获得粗略的分割结果，在高分辨率上使用light convnet，并结合低分辨率分割结果（CFF模块），优化分割细节   
    
